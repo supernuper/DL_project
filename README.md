@@ -7,7 +7,7 @@
   </p>
 
 
-![Images from the dataset](./glasses_no_glasses.PNG)
+![Images from the dataset](./glasses_no_glasses.png)
 
 ## Background
 Face recognition systems have become an integral part of modern technology, seamlessly integrated into our daily lives for security, convenience, and personalization. 
