@@ -54,10 +54,10 @@ the dataset has	47,917 Images in total devided to 14,832 Images with glasses and
 
 ## results 
 
-### results after unfrizzing the last layer  
+### results after unfreezing the last layer  
 
-### results after unfrizzing the last ?? layers 
-### results with and without data augmentaition
+### results after unfreezing the last ?? layers 
+### results with and without data augmentation
 
 ## How To Run
 ?????????????????????????
