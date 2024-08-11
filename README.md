@@ -1,7 +1,7 @@
 #  Face Glasses Classification
  
   <p align="center">
-   >Nofar Ben Porat</a>
+   Nofar Ben Porat</a>
   <br>
     Hanan Ben shitrit
   </p>
