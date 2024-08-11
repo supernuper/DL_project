@@ -1,4 +1,4 @@
-#  Face Glasses Classification
+#  Eyeglasses Detection In Photos
  
 
 
