@@ -1,4 +1,24 @@
+# Imports
+import os
+import shutil
+import gdown
+import torch
+from torchvision import transforms
+from PIL import Image
+import matplotlib.pyplot as plt
+from torchvision.datasets import ImageFolder
+from torch.utils.data import DataLoader, random_split, ConcatDataset, Subset
+import numpy as np
+from kornia import augmentation as K
+from kornia.augmentation import AugmentationSequential
 
+# Define a sequence of augmentations
+aug_list = AugmentationSequential(
+    K.ColorJitter(0.1, 0.1, 0.1, 0.1, p=0.3),
+    K.RandomAffine(360, [0.1, 0.1], [0.7, 1.2], [30., 50.], p=0.3),
+    K.RandomPerspective(0.5, p=0.3),
+    same_on_batch=False,
+)
 def train_model(model, train_loader, criterion, optimizer, scheduler, epochs, device):
     train_losses = []
     train_accuracies = []
@@ -43,7 +63,7 @@ scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
 # Hyperparameters
 batch_size = 1024
 learning_rate = 0.001
-epochs = 6
+epochs = 20
 weight_decay = 1e-4
 
 train_losses, train_accuracies = train_model(model, train_loader, criterion, optimizer, scheduler, epochs, device)
