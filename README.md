@@ -1,4 +1,5 @@
 # project name
+ 
   <p align="center">
     <a href="https://github.com/orronai">Nofar Ben Porat</a>
   <br>
@@ -10,7 +11,6 @@ pictures from the data set? a gif of something?
   
 
 ## Background
-
 Face recognition systems have become an integral part of modern technology, seamlessly integrated into our daily lives for security, convenience, and personalization. 
 However, these systems often struggle with accurately detecting faces of individuals who wear glasses, a challenge that can hinder their effectiveness.
 
@@ -41,14 +41,22 @@ Our project addresses this issue by enhancing face detection for individuals who
 ## pre train model DINOv2
 We used the pretrained DINOv2 architecture which is designed to produce high-performance visual features that can be effectively employed with simple classifiers.
 The DINOv2 models were pretrained on a dataset of 142 M images without using any labels or annotations, showcasing the model's ability to learn powerful representations in a self-supervised manner.
-We used the dinov2_vitg14_lc model in our project.
 
+We used the dinov2_vitg14_lc model in our project.
+```python
+# Import the pretrained dinov2 architecture
+import torch
+model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14')
+```
 ## The dataset
 for the data set we used MeGlass which is an eyeglass dataset originaly designed for eyeglass face recognition evaluation. 
 For each person in the dataset at least two face images with eyeglass and two face images without eyeglass.
 the dataset has	47,917 Images in total devided to 14,832 Images with glasses and 33,085 Images without glasses.
+
 ## results 
+
 ### results after unfrizzing the last layer  
+
 ### results after unfrizzing the last ?? layers 
 ### results with and without data augmentaition
 
