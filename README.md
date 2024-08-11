@@ -8,7 +8,7 @@
 
 
 pictures from the data set? a gif of something?
-  
+![image]
 
 ## Background
 Face recognition systems have become an integral part of modern technology, seamlessly integrated into our daily lives for security, convenience, and personalization. 
