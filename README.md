@@ -33,7 +33,7 @@ Our project addresses this issue by enhancing face detection for individuals who
 |`images`| images of the network build and chosen results|
 |`split.py`| the Train/Val/Test split we used|
 |`Data.py`| loading the data from MeGlass and splitting it accourding to the tags| 
-|`train.py`| training the model| 
+|`train.py`| code for training the model| 
 |`output`| the output of the train| 
 |`Project_report.pdf`| project report of our network|
 
@@ -54,9 +54,10 @@ the dataset has	47,917 Images in total devided to 14,832 Images with glasses and
 
 ## results 
 
-### results after unfreezing the last layer  
+### results after unfreezing the last layer   
 
 ### results after unfreezing the last ?? layers 
+
 ### results with and without data augmentation
 
 ## How To Run
