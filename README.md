@@ -1,7 +1,7 @@
-# project name
+#  Face Glasses Classification
  
   <p align="center">
-    <a href="https://github.com/orronai">Nofar Ben Porat</a>
+   >Nofar Ben Porat</a>
   <br>
     Hanan Ben shitrit
   </p>
