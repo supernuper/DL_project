@@ -1,19 +1,21 @@
 #  Face Glasses Classification
  
+
+
   <p align="center">
    Nofar Ben Porat</a>
   <br>
     Hanan Ben shitrit
   </p>
-
-
-![Images from the dataset](./glasses_no_glasses.png)
-
+  
 ## Background
 Face recognition systems have become an integral part of modern technology, seamlessly integrated into our daily lives for security, convenience, and personalization. 
 However, these systems often struggle with accurately detecting faces of individuals who wear glasses, a challenge that can hinder their effectiveness.
 
 Our project addresses this issue by enhancing face detection for individuals who wear glasses. using DINOv2 architecture and the MeGlass dataset of real-world images, we aim to improve the accuracy and reliability of face recognition systems in such scenarios.
+
+![Images from the dataset](./glasses_no_glasses.png)
+
 
 ## Prerequisites
 |Library         | Version |
@@ -30,7 +32,7 @@ Our project addresses this issue by enhancing face detection for individuals who
 
 |File name         | Purpsoe |
 |----------------------|------|
-|`images`| images of the network build and chosen results|
+|`glasses_no_glasses.png`| images from the dataset|
 |`split.py`| the Train/Val/Test split we used|
 |`Data.py`| loading the data from MeGlass and splitting it accourding to the tags| 
 |`train.py`| code for training the model| 
