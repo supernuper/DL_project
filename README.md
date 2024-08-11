@@ -7,8 +7,7 @@
   </p>
 
 
-pictures from the data set? a gif of something?
-![Images from the dataset](./)
+![Images from the dataset](./glasses_no_glasses_img.PNG)
 
 ## Background
 Face recognition systems have become an integral part of modern technology, seamlessly integrated into our daily lives for security, convenience, and personalization. 
@@ -35,7 +34,7 @@ Our project addresses this issue by enhancing face detection for individuals who
 |`split.py`| the Train/Val/Test split we used|
 |`Data.py`| loading the data from MeGlass and splitting it accourding to the tags| 
 |`train.py`| training the model| 
-|`outpot`| the output of the train| 
+|`output`| the output of the train| 
 |`Project_report.pdf`| project report of our network|
 
 ## pre train model DINOv2
