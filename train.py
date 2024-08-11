@@ -19,41 +19,66 @@ aug_list = AugmentationSequential(
     K.RandomPerspective(0.5, p=0.3),
     same_on_batch=False,
 )
+# Function for training the model
 def train_model(model, train_loader, criterion, optimizer, scheduler, epochs, device):
-    train_losses = []
-    train_accuracies = []
+# Train with augmentations
+train_losses = []
+train_accuracies = []
 
-    for epoch in range(1, epochs + 1):
-        model.train()
-        running_loss = 0.0
-        epoch_time = time.time()
+for epoch in range(1, epochs + 1):
+    model.train()
+    running_loss = 0.0
+    epoch_time = time.time()
 
-        for i, data in enumerate(train_loader, 0):
-            inputs, labels = data
+    for i, data in enumerate(train_loader, 0):
+        inputs, labels = data
 
-            inputs = inputs.to(device)
-            labels = labels.to(device)
-            outputs = model(inputs)
-            loss = criterion(outputs, labels)
+        inputs = aug_list(inputs).to(device)
+        labels = labels.to(device)
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
 
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
 
-            running_loss += loss.data.item()
+        running_loss += loss.data.item()
 
-        running_loss /= len(train_loader)
-        train_losses.append(running_loss)
-        train_accuracy = calculate_accuracy(model, train_loader, device)
-        train_accuracies.append(train_accuracy)
-        scheduler.step()
+    running_loss /= len(train_loader)
+    train_losses.append(running_loss)
+    train_accuracy = calculate_accuracy(model, train_loader, device)
+    train_accuracies.append(train_accuracy)
+    scheduler.step()
 
-        log = "Epoch: {} | Loss: {:.4f} | Training accuracy: {:.3f}% ".format(epoch, running_loss, train_accuracy)
-        epoch_time = time.time() - epoch_time
-        log += "Epoch Time: {:.2f} secs".format(epoch_time)
-        print(log)
+    log = "Epoch: {} | Loss: {:.4f} | Training accuracy: {:.3f}% ".format(epoch, running_loss, train_accuracy)
+    epoch_time = time.time() - epoch_time
+    log += "Epoch Time: {:.2f} secs".format(epoch_time)
+    print(log)
 
     return train_losses, train_accuracies
+    
+# Function for calculating accuracy
+def calculate_accuracy(model, dataloader, device):
+    model.eval() # put in evaluation mode, turn off Dropout, BatchNorm uses learned statistics
+    total_correct = 0
+    total_images = 0
+    with torch.no_grad():
+        for data in dataloader:
+            images, labels = data
+            images = images.to(device)
+            labels = labels.to(device)
+            outputs = model(images)
+
+            _, predicted = torch.max(outputs.data, 1)
+            total_images += labels.size(0)
+            total_correct += (predicted == labels).sum().item()
+
+    model_accuracy = total_correct / total_images * 100
+    return model_accuracy
+
+import time
+
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 criterion = torch.nn.CrossEntropyLoss()
 model.to(device)
