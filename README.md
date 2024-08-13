@@ -1,6 +1,6 @@
 <h1 align="center">Exploring Layer-Wise Fine-Tuning of a Pretrained ResNet-50 on CIFAR-100: Impact Analysis and Performance Evaluation</h1>
   <div align="center">
-  <img src="TransferLearning.jpg" alt="Transfer Learning" width="500"/>
+  <img src="images/TransferLearning.jpg" alt="Transfer Learning" width="500"/>
   </div>
 
   <p align="center">
@@ -31,11 +31,11 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 
 |File name         | Purpose |
 |----------------------|------|
-|`Imports.ipynb`| Necessary Imports for the Project|
-|`Dataset.ipynb`| Loading the CIFAR100 dataset and providing an example of the images| 
-|`Split.ipynb`| Splitting the dataset to train-valid-test| 
-|`HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the layers parameters to learn, training and evaluating. Hyperparameters definition. Creating dataloaders| 
-|`Model_Train_Eval.ipynb`| Training and evaluating the model on our data using all of the above|
+|`code_files/Imports.ipynb`| Necessary Imports for the Project|
+|`code_files/Dataset.ipynb`| Loading the CIFAR100 dataset and providing an example of the images| 
+|`code_files/Split.ipynb`| Splitting the dataset to train-valid-test| 
+|`code_files/HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the layers parameters to learn, training and evaluating. Hyperparameters definition. Creating dataloaders| 
+|`code_files/Model_Train_Eval.ipynb`| Training and evaluating the model on our data using all of the above|
 
 ## Pretrained model - ResNet-50
 ResNet-50 is a deep convolutional neural network with 50 layers, known for its use of residual connections (skip connections) that help mitigate the vanishing gradient problem, making it easier to train. It’s part of the ResNet family, introduced in 2015, and is widely used for image classification and other computer vision tasks. The model is available pretrained on ImageNet via `torchvision`, making it ideal for transfer learning.
@@ -53,7 +53,7 @@ model = resnet50(weights=ResNet50_Weights.DEFAULT)
 ```
 ## The dataset - CIFAR100
 <div align="center">
-  <img src="CIFAR-100.png" alt="CIFAR-100 Dataset" width="500"/>
+  <img src="images/CIFAR-100.png" alt="CIFAR-100 Dataset" width="500"/>
 </div>
 
 CIFAR-100 is a popular image classification dataset that is widely used in the field of computer vision and deep learning. It consists of 100 different classes of images, with each class containing 600 images. The images are small, with a resolution of 32x32 pixels, and are in RGB format (three color channels: red, green, and blue).
@@ -74,4 +74,4 @@ The dataset is divided into 50,000 training images and 10,000 test images.
 ## Sources
 * CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
 * Resnet50: https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html
-* TransferLearning.jpg: https://www.leewayhertz.com/transfer-learning/
+* images/TransferLearning.jpg: https://www.leewayhertz.com/transfer-learning/
