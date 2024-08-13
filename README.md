@@ -34,7 +34,7 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 |`Imports.ipynb`| Necessary Imports for the Project|
 |`Dataset.ipynb`| Loading the CIFAR100 dataset and providing an example of the images| 
 |`Split.ipynb`| Splitting the dataset to train-valid-test| 
-|`HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the model, training and evaluating. Hyperparameters definition. Creating dataloaders| 
+|`HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the layers parameters to learn, training and evaluating. Hyperparameters definition. Creating dataloaders| 
 |`Model_Train_Eval.ipynb`| Training and evaluating the model on our data using all of the above|
 
 ## Pretrained model - ResNet-50
