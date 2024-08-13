@@ -37,22 +37,25 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 |`output`| the output of the train| 
 |`Project_report.pdf`| project report of our network|
 
-## pre train model DINOv2
-We used the pretrained DINOv2 architecture which is designed to produce high-performance visual features that can be effectively employed with simple classifiers.
-The DINOv2 models were pretrained on a dataset of 142 M images without using any labels or annotations, showcasing the model's ability to learn powerful representations in a self-supervised manner.
+## Pretrained model - ResNet-50
+ResNet-50 is a deep convolutional neural network with 50 layers, known for its use of residual connections (skip connections) that help mitigate the vanishing gradient problem, making it easier to train. It’s part of the ResNet family, introduced in 2015, and is widely used for image classification and other computer vision tasks. The model is available pretrained on ImageNet via `torchvision`, making it ideal for transfer learning.
 
-We used the dinov2_vitg14_lc model in our project.
+Key Features:
+- 50 Layers: Deep architecture with multiple convolutional and fully connected layers.
+- Residual Connections: Skip connections that allow the network to learn residuals, improving training stability and performance.
+- Pretrained Weights: Available with pretrained weights on ImageNet, enabling quick transfer learning for new tasks.
+- Versatile: Commonly used in image classification, object detection, and feature extraction tasks.
+
 ```python
-# Import the pretrained dinov2 architecture
 import torch
-model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14')
+from torchvision.models import resnet50, ResNet50_Weights
+model = resnet50(weights=ResNet50_Weights.DEFAULT)
 ```
-## The dataset
-for the data set we used MeGlass which is an eyeglass dataset originaly designed for eyeglass face recognition evaluation. 
-For each person in the dataset at least two face images with eyeglass and two face images without eyeglass.
-the dataset has	47,917 Images in total devided to 14,832 Images with glasses and 33,085 Images without glasses.
+## The dataset - CIFAR100
+CIFAR-100 is a popular image classification dataset that is widely used in the field of computer vision and deep learning. It consists of 100 different classes of images, with each class containing 600 images. The images are small, with a resolution of 32x32 pixels, and are in RGB format (three color channels: red, green, and blue).
+The dataset is divided into 50,000 training images and 10,000 test images.
 
-## results 
+## Results 
 
 ### results after unfreezing the last layer   
 
@@ -65,5 +68,5 @@ the dataset has	47,917 Images in total devided to 14,832 Images with glasses and
 
 
 ## Sources
-* MeGlass - the dataset used: https://github.com/cleardusk/MeGlass
-* DINOv2 - the network architecture: https://github.com/facebookresearch/dinov2
+* CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
+* Resnet50: https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html
