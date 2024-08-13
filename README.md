@@ -36,7 +36,9 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 |`code_files/Split.ipynb`| Splitting the dataset to train-valid-test| 
 |`code_files/HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the layers parameters to learn, training and evaluating. Hyperparameters definition. Creating dataloaders| 
 |`code_files/Model_Train_Eval.ipynb`| Training and evaluating the model on our data using all of the above|
-|`images`| contains: CIFAR-100 example, TransferLearning theme image, results for the model evaluation|
+|`output`| Contains an image and a text file for each training method. The image is a graph of the training loss, and the text file contains the training epochs and the accuracy on the validation set|
+|`CIFAR-100.png`| Example image from the CIFAR-100 dataset|
+|`TransferLearning.jpg`| Example image illustrating the Transfer Learning theme|
 
 ## Pretrained model - ResNet-50
 ResNet-50 is a deep convolutional neural network with 50 layers, known for its use of residual connections (skip connections) that help mitigate the vanishing gradient problem, making it easier to train. It’s part of the ResNet family, introduced in 2015, and is widely used for image classification and other computer vision tasks. The model is available pretrained on ImageNet via `torchvision`, making it ideal for transfer learning.
