@@ -1,6 +1,6 @@
 <h1 align="center">Exploring Layer-Wise Fine-Tuning of a Pretrained ResNet-50 on CIFAR-100: Impact Analysis and Performance Evaluation</h1>
   <div align="center">
-  <img src="images/TransferLearning.jpg" alt="Transfer Learning" width="500"/>
+  <img src="TransferLearning.jpg" alt="Transfer Learning" width="500"/>
   </div>
 
   <p align="center">
@@ -56,7 +56,7 @@ model = resnet50(weights=ResNet50_Weights.DEFAULT)
 ```
 ## The dataset - CIFAR100
 <div align="center">
-  <img src="images/CIFAR-100.png" alt="CIFAR-100 Dataset" width="500"/>
+  <img src="CIFAR-100.png" alt="CIFAR-100 Dataset" width="500"/>
 </div>
 
 CIFAR-100 is a popular image classification dataset that is widely used in the field of computer vision and deep learning. It consists of 100 different classes of images, with each class containing 600 images. The images are small, with a resolution of 32x32 pixels, and are in RGB format (three color channels: red, green, and blue).
@@ -72,7 +72,7 @@ Epoch: 13 | Loss: 1.2130 | Training accuracy: 69.260% Epoch Time: 52.87 secs
 Epoch: 14 | Loss: 1.1969 | Training accuracy: 69.582% Epoch Time: 53.17 secs
 Epoch: 15 | Loss: 1.2051 | Training accuracy: 67.890% Epoch Time: 52.33 secs
 ```
-<img src="images/feature_extraction.png" width="500"/>
+<img src="output/feature_extraction.png" width="500"/>
 
 ```python
 Accuracy: 50.150%
@@ -87,7 +87,7 @@ Epoch: 13 | Loss: 0.5369 | Training accuracy: 91.465% Epoch Time: 55.11 secs
 Epoch: 14 | Loss: 0.5210 | Training accuracy: 91.760% Epoch Time: 55.44 secs
 Epoch: 15 | Loss: 0.5190 | Training accuracy: 91.748% Epoch Time: 54.90 secs
 ```
-<img src="images/3layers.png" width="500"/>
+<img src="output/3layers.png" width="500"/>
 
 ```python
 Accuracy: 55.300%
@@ -102,7 +102,7 @@ Epoch: 13 | Loss: 0.0882 | Training accuracy: 99.918% Epoch Time: 54.40 secs
 Epoch: 14 | Loss: 0.0759 | Training accuracy: 99.915% Epoch Time: 54.51 secs
 Epoch: 15 | Loss: 0.0738 | Training accuracy: 99.925% Epoch Time: 53.50 secs
 ```
-<img src="images/6layers.png" width="500"/>
+<img src="output/6layers.png" width="500"/>
 
 ```python
 Accuracy: 53.400%
@@ -116,7 +116,7 @@ Epoch: 13 | Loss: 0.0130 | Training accuracy: 99.983% Epoch Time: 56.99 secs
 Epoch: 14 | Loss: 0.0098 | Training accuracy: 99.983% Epoch Time: 58.12 secs
 Epoch: 15 | Loss: 0.0142 | Training accuracy: 99.972% Epoch Time: 56.49 secs
 ```
-<img src="images/12layers.png" width="500"/>
+<img src="output/12layers.png" width="500"/>
 
 ```python
 Accuracy: 60.420%
@@ -130,7 +130,7 @@ Epoch: 13 | Loss: 0.0091 | Training accuracy: 99.983% Epoch Time: 56.24 secs
 Epoch: 14 | Loss: 0.0055 | Training accuracy: 99.983% Epoch Time: 56.20 secs
 Epoch: 15 | Loss: 0.0056 | Training accuracy: 99.983% Epoch Time: 55.34 secs
 ```
-<img src="images/15layers.png" width="500"/>
+<img src="output/15layers.png" width="500"/>
 
 ```python
 Accuracy: 66.100%
@@ -144,7 +144,7 @@ Epoch: 13 | Loss: 0.0027 | Training accuracy: 99.983% Epoch Time: 61.55 secs
 Epoch: 14 | Loss: 0.0024 | Training accuracy: 99.980% Epoch Time: 61.44 secs
 Epoch: 15 | Loss: 0.0022 | Training accuracy: 99.983% Epoch Time: 61.41 secs
 ```
-<img src="images/25layers.png" width="500"/>
+<img src="output/25layers.png" width="500"/>
 
 ```python
 Accuracy: 69.990%
@@ -172,7 +172,7 @@ Epoch: 13 | Loss: 0.0009 | Training accuracy: 99.982% Epoch Time: 78.82 secs
 Epoch: 14 | Loss: 0.0008 | Training accuracy: 99.982% Epoch Time: 78.91 secs
 Epoch: 15 | Loss: 0.0008 | Training accuracy: 99.982% Epoch Time: 78.77 secs
 ```
-<img src="images/finaltest.png" width="500"/>
+<img src="output/finaltest.png" width="500"/>
 
 ```python
 Accuracy: 72.180%
