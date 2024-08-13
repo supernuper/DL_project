@@ -52,7 +52,9 @@ from torchvision.models import resnet50, ResNet50_Weights
 model = resnet50(weights=ResNet50_Weights.DEFAULT)
 ```
 ## The dataset - CIFAR100
-![image](https://github.com/user-attachments/assets/aee08bc1-1b7f-42ae-b76b-054b166e5e3d)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/aee08bc1-1b7f-42ae-b76b-054b166e5e3d" alt="Description of image" width="500"/>
+</div>
 
 CIFAR-100 is a popular image classification dataset that is widely used in the field of computer vision and deep learning. It consists of 100 different classes of images, with each class containing 600 images. The images are small, with a resolution of 32x32 pixels, and are in RGB format (three color channels: red, green, and blue).
 The dataset is divided into 50,000 training images and 10,000 test images.
