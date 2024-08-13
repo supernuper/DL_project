@@ -1,16 +1,13 @@
-# <p align="center">Exploring Layer-Wise Fine-Tuning of a Pretrained ResNet-50 on CIFAR-100: Impact Analysis and Performance Evaluation</p>
- 
-
-
-  <p align="center">
-   Nofar Ben Porat</a>
-  <br>
-    Hanan Ben shitrit
-  </p>
-  
+<h1 align="center">Exploring Layer-Wise Fine-Tuning of a Pretrained ResNet-50 on CIFAR-100: Impact Analysis and Performance Evaluation</h1>
   <div align="center">
   <img src="TransferLearning.jpg" alt="Transfer Learning" width="500"/>
   </div>
+
+  <p align="center">
+  <a href="https://github.com/supernoper" target="_blank">Nofar Ben Porat</a>
+  <br>
+  <a href="https://github.com/hananbenshitrit" target="_blank">Hanan Ben Shitrit</a>
+</p>
 
 ## Background
 In this project, the goal is to explore the impact of unfreezing different numbers of layers in a ResNet50 model when training on the CIFAR-100 dataset.
