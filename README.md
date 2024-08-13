@@ -75,7 +75,7 @@ Epoch: 15 | Loss: 1.2051 | Training accuracy: 67.890% Epoch Time: 52.33 secs
 <img src="output/feature_extraction.png" width="500"/>
 
 ```python
-Accuracy: 50.150%
+Validation Accuracy: 50.150%
 ```
 
 ### Fine-tuning the last 3 Layers
@@ -90,7 +90,7 @@ Epoch: 15 | Loss: 0.5190 | Training accuracy: 91.748% Epoch Time: 54.90 secs
 <img src="output/3layers.png" width="500"/>
 
 ```python
-Accuracy: 55.300%
+Validation Accuracy: 55.300%
 ```
 
 ### Fine-tuning the last 6 Layers
@@ -105,7 +105,7 @@ Epoch: 15 | Loss: 0.0738 | Training accuracy: 99.925% Epoch Time: 53.50 secs
 <img src="output/6layers.png" width="500"/>
 
 ```python
-Accuracy: 53.400%
+Validation Accuracy: 53.400%
 ```
 ### Fine-tuning the last 12 Layers
 ```python
@@ -119,7 +119,7 @@ Epoch: 15 | Loss: 0.0142 | Training accuracy: 99.972% Epoch Time: 56.49 secs
 <img src="output/12layers.png" width="500"/>
 
 ```python
-Accuracy: 60.420%
+Validation Accuracy: 60.420%
 ```
 ### Fine-tuning the last 15 Layers
 ```python
@@ -133,7 +133,7 @@ Epoch: 15 | Loss: 0.0056 | Training accuracy: 99.983% Epoch Time: 55.34 secs
 <img src="output/15layers.png" width="500"/>
 
 ```python
-Accuracy: 66.100%
+Validation Accuracy: 66.100%
 ```
 ### Fine-tuning the last 25 Layers
 ```python
@@ -147,12 +147,12 @@ Epoch: 15 | Loss: 0.0022 | Training accuracy: 99.983% Epoch Time: 61.41 secs
 <img src="output/25layers.png" width="500"/>
 
 ```python
-Accuracy: 69.990%
+Validation Accuracy: 69.990%
 ```
 
-### Training Times, Accuracy, and Fine-Tuning Strategies
+### Training Times, Validation Accuracy, and Fine-Tuning Strategies
 
-| Fine-Tuning Strategy          | Total Time (seconds) | Approx. Time (minutes:seconds) | Accuracy (%) |
+| Fine-Tuning Strategy          | Total Time (seconds) | Approx. Time (minutes:seconds) | Validation Accuracy (%) |
 |-------------------------------|----------------------|--------------------------------|--------------|
 | Feature Extraction            | 795.76               | 13:16                          | 50.150       |
 | Fine-tuning the last 3 Layers  | 834.47               | 13:54                          | 55.300       |
@@ -177,7 +177,7 @@ Epoch: 15 | Loss: 0.0008 | Training accuracy: 99.982% Epoch Time: 78.77 secs
 <img src="output/finaltest.png" width="500"/>
 
 ```python
-Accuracy: 72.180%
+Test Accuracy: 72.180%
 ```
 ## How To Run
 To run the project, you can download all the notebooks under the folder `code_files`, combine them, and execute them by their order:
