@@ -1,0 +1,17 @@
+Epoch: 1 | Loss: 5.0775 | Training accuracy: 40.832% Epoch Time: 57.40 secs
+Epoch: 2 | Loss: 1.6795 | Training accuracy: 71.380% Epoch Time: 56.76 secs
+Epoch: 3 | Loss: 0.9643 | Training accuracy: 86.877% Epoch Time: 56.25 secs
+Epoch: 4 | Loss: 0.5120 | Training accuracy: 95.845% Epoch Time: 56.64 secs
+Epoch: 5 | Loss: 0.2495 | Training accuracy: 98.825% Epoch Time: 56.49 secs
+Epoch: 6 | Loss: 0.1293 | Training accuracy: 99.662% Epoch Time: 56.92 secs
+Epoch: 7 | Loss: 0.0675 | Training accuracy: 99.845% Epoch Time: 56.85 secs
+Epoch: 8 | Loss: 0.0525 | Training accuracy: 99.572% Epoch Time: 56.85 secs
+Epoch: 9 | Loss: 0.0528 | Training accuracy: 99.948% Epoch Time: 57.17 secs
+Epoch: 10 | Loss: 0.0385 | Training accuracy: 99.975% Epoch Time: 57.02 secs
+Epoch: 11 | Loss: 0.0257 | Training accuracy: 99.977% Epoch Time: 56.93 secs
+Epoch: 12 | Loss: 0.0189 | Training accuracy: 99.980% Epoch Time: 56.23 secs
+Epoch: 13 | Loss: 0.0130 | Training accuracy: 99.983% Epoch Time: 56.99 secs
+Epoch: 14 | Loss: 0.0098 | Training accuracy: 99.983% Epoch Time: 58.12 secs
+Epoch: 15 | Loss: 0.0142 | Training accuracy: 99.972% Epoch Time: 56.49 secs
+
+Accuracy: 60.420%
