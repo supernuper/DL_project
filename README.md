@@ -29,7 +29,7 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 
 ## Files in the repository
 
-|File name         | Purpsoe |
+|File name         | Purpose |
 |----------------------|------|
 |`Imports.ipynb`| Necessary Imports for the Project|
 |`Dataset.ipynb`| Loading the CIFAR100 dataset and providing an example of the images| 
