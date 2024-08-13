@@ -8,6 +8,11 @@
     Hanan Ben shitrit
   </p>
   
+  <div align="center">
+  <img src="TransferLearning.jpg" alt="Transfer Learning" width="500"/>
+  <p><small>Source: <a href="https://www.leewayhertz.com/transfer-learning/" target="_blank">LeewayHertz</a></small></p>
+  </div>
+
 ## Background
 In this project, the goal is to explore the impact of unfreezing different numbers of layers in a ResNet50 model when training on the CIFAR-100 dataset.
 The approach involves six distinct steps, where progressively more layers of ResNet50 are unfrozen during training. 
