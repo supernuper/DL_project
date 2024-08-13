@@ -31,12 +31,11 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 
 |File name         | Purpsoe |
 |----------------------|------|
-|``| images from the dataset|
-|`Imports.ipynb`| the Train/Val/Test split we used|
-|`Dataset.ipynb`| loading the data from MeGlass and splitting it accourding to the tags| 
-|`train.py`| code for training the model| 
-|`output`| the output of the train| 
-|`Project_report.pdf`| project report of our network|
+|`Imports.ipynb`| Necessary Imports for the Project|
+|`Dataset.ipynb`| Loading the CIFAR100 dataset and providing an example of the images| 
+|`Split.ipynb`| Splitting the dataset to train-valid-test| 
+|`HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the model, training and evaluating. Hyperparameters definition. Creating dataloaders| 
+|`Model_Train_Eval.ipynb`| Training and evaluating the model on our data using all of the above|
 
 ## Pretrained model - ResNet-50
 ResNet-50 is a deep convolutional neural network with 50 layers, known for its use of residual connections (skip connections) that help mitigate the vanishing gradient problem, making it easier to train. It’s part of the ResNet family, introduced in 2015, and is widely used for image classification and other computer vision tasks. The model is available pretrained on ImageNet via `torchvision`, making it ideal for transfer learning.
