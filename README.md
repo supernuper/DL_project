@@ -10,7 +10,6 @@
   
   <div align="center">
   <img src="TransferLearning.jpg" alt="Transfer Learning" width="500"/>
-  <p><small>Source: <a href="https://www.leewayhertz.com/transfer-learning/" target="_blank">LeewayHertz</a></small></p>
   </div>
 
 ## Background
@@ -79,3 +78,4 @@ The dataset is divided into 50,000 training images and 10,000 test images.
 ## Sources
 * CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
 * Resnet50: https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html
+* TransferLearning.jpg: https://www.leewayhertz.com/transfer-learning/
