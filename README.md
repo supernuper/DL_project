@@ -68,8 +68,29 @@ The dataset is divided into 50,000 training images and 10,000 test images.
 ### results with and without data augmentation
 
 ## How To Run
-?????????????????????????
+To run the project, you can download all the notebooks under the folder `code_files`, combine them, and execute them by their order:
+`Imports.ipynb` -> `Dataset.ipynb` -> `Split.ipynb` -> `HFuncs_HParam_DataLoaders.ipynb` -> `Model_Train_Eval.ipynb`
 
+A more efficient method (if you don't mind just viewing the outputs of the notebooks) is as follows - first, clone the repository:
+```python
+!git clone https://github.com/supernuper/DL_project.git
+```
+Then, start running the files by their order:
+`Imports.ipynb` -> `Dataset.ipynb` -> `Split.ipynb` -> `HFuncs_HParam_DataLoaders.ipynb` -> `Model_Train_Eval.ipynb`
+Using the following commands:
+```python
+%run /content/DL_project/code_files/Imports.ipynb
+%run /content/DL_project/code_files/Dataset.ipynb
+%run /content/DL_project/code_files/Split.ipynb
+%run /content/DL_project/code_files/HFuncs_HParam_DataLoaders.ipynb
+%run /content/DL_project/code_files/Model_Train_Eval.ipynb
+```
+(The path `/content/` assumes you're running the project in Google Colab. You can also change it to `./` or to any directory where you cloned the repository)
+
+Notes: 
+- We recommend running one line at a time to view proper execution and output.
+- The command `%run` is a `magic command` and is specific to IPython environments, such as Jupyter Notebooks and Google Colab.
+- About the runtime: The final file, `Model_Train_Eval.ipynb`, executes code that trains and evaluates the model 7 times - 6 times with different fine-tuning setups and once more for the final test evaluation. This process will take some time (approximately 65 seconds per epoch, totaling around 6825 seconds or 113.75 minutes). This estimate is based on running with a Google Colab T4 GPU.
 
 ## Sources
 * CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
