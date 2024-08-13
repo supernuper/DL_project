@@ -203,7 +203,7 @@ Notes:
 - We recommend running one line at a time to view proper execution and output.
 - The command `%run` is a `magic command` and is specific to IPython environments, such as Jupyter Notebooks and Google Colab.
 - About the runtime: The final file, `Model_Train_Eval.ipynb`, executes code that trains and evaluates the model 7 times - 6 times with different fine-tuning setups and once more for the final test evaluation. This process will take some time (approximately 65 seconds per epoch, totaling around 6825 seconds or 113.75 minutes). This estimate is based on running with a Google Colab T4 GPU.
-- The output for the final file will include 6 evaluations: feature extraction, fine-tuning of 3, 6, 12, 15, and 25 layers, and finally the evaluation on the test set, in that order.
+- The output for the final file will include 7 evaluations: feature extraction, fine-tuning of 3, 6, 12, 15, and 25 layers, and finally the evaluation on the test set, in that order.
 
 ## Sources
 * CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
