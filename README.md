@@ -164,7 +164,7 @@ Accuracy: 69.990%
 As we can see, Feature Extraction is the fastest approach but yields the lowest accuracy at 50.15%. Increasing the number of fine-tuned layers generally improves accuracy but also increases training time. For instance, fine-tuning the last 3 layers achieves 55.30% accuracy with a moderate training time, while fine-tuning the last 25 layers results in the highest accuracy of 69.99% but takes the longest. This demonstrates a trade-off between training time and model performance: more fine-tuning typically enhances accuracy but requires more time.
 
 ### Evaluation on the test set
-Using the 25-layer setup since it achieved the best performance on the validation setץ
+Using the 25-layer setup since it achieved the best performance on the validation set.
 
 ```python
 Epoch: 1 | Loss: 3.7327 | Training accuracy: 69.178% Epoch Time: 79.12 secs
