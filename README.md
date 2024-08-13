@@ -4,7 +4,7 @@
   </div>
 
   <p align="center">
-  <a href="https://github.com/supernoper" target="_blank">Nofar Ben Porat</a>
+  <a href="https://github.com/supernuper" target="_blank">Nofar Ben Porat</a>
   <br>
   <a href="https://github.com/hananbenshitrit" target="_blank">Hanan Ben Shitrit</a>
 </p>
