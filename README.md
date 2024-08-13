@@ -61,11 +61,17 @@ The dataset is divided into 50,000 training images and 10,000 test images.
 
 ## Results 
 
-### results after unfreezing the last layer   
+### Feature Extraction 
 
-### results after unfreezing the last ?? layers 
+### Fine-tuning the last 3 Layers
 
-### results with and without data augmentation
+### Fine-tuning the last 6 Layers
+
+### Fine-tuning the last 12 Layers
+
+### Fine-tuning the last 15 Layers
+
+### Fine-tuning the last 25 Layers
 
 ## How To Run
 To run the project, you can download all the notebooks under the folder `code_files`, combine them, and execute them by their order:
