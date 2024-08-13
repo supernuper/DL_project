@@ -30,7 +30,7 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 
 |File name         | Purpsoe |
 |----------------------|------|
-|`glasses_no_glasses.png`| images from the dataset|
+|``| images from the dataset|
 |`split.py`| the Train/Val/Test split we used|
 |`Data.py`| loading the data from MeGlass and splitting it accourding to the tags| 
 |`train.py`| code for training the model| 
