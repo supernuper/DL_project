@@ -36,7 +36,7 @@ Initially, only one layer is unfrozen, allowing the rest of the network to remai
 |`code_files/Split.ipynb`| Splitting the dataset to train-valid-test| 
 |`code_files/HFuncs_HParam_DataLoaders.ipynb`| Helper functions for defining the layers parameters to learn, training and evaluating. Hyperparameters definition. Creating dataloaders| 
 |`code_files/Model_Train_Eval.ipynb`| Training and evaluating the model on our data using all of the above|
-|`output`| Contains an image and a text file for each run. The image is a graph of the training loss, and the text file contains the training epochs and the accuracy on the validation set (or the test set - for the final test)|
+|`output`| Contains an image and a text file for each run. The image is a graph of the training loss, and the text file includes the training epochs and the accuracy on the validation set (or the test set for the final test)|
 |`CIFAR-100.png`| Example image from the CIFAR-100 dataset|
 |`TransferLearning.jpg`| Example image illustrating the Transfer Learning theme|
 
