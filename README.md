@@ -208,4 +208,4 @@ Notes:
 ## Sources
 * CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
 * Resnet50: https://pytorch.org/vision/main/models/generated/torchvision.models.resnet50.html
-* images/TransferLearning.jpg: https://www.leewayhertz.com/transfer-learning/
+* images/TransferLearning.jpg: https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2023/07/14001536/Transfer-learning.png
